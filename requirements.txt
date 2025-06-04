@@ -5,5 +5,5 @@ flask_cors
 matplotlib
 keras
 pillow
-tensorflow
+tensorflow-cpu
 pandas
