@@ -13,11 +13,10 @@ from flask import jsonify
 
 
 classification_classes = {
-    0: 'Pneumonia',
-    1: 'Covid',
-    2: 'Lung_Opacity',
-    3: 'Normal',
-    4: 'Tuberculosis'
+    0: 'Alzheimers',
+    1: 'Normal',
+    2: 'Parkinson',
+    
 }
 
 def preprocess_image(image) -> np.array:
@@ -43,12 +42,10 @@ def classify_image(image: np.array) -> dict:
     print(classification.shape)
     return {
         "classification": classified_label,
-        "Pneumonia": round(float(classification[0]), 6),
-        "Covid": round(float(classification[1]), 6),
-        "Lung_Opacity": round(float(classification[2]), 6),
-        "Normal": round(float(classification[3]), 6),
-        "Tuberculosis": round(float(classification[4]), 6)
-    }
+        "Alzheimer": round(float(classification[0]), 6),
+        "Normal": round(float(classification[1]), 6),
+        "Parkinson": round(float(classification[2]), 6),
+        }
 
 # console.log(classification.shape)
 # console.log(classification)
