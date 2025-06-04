@@ -1,5 +1,5 @@
 # gunicorn.conf.py
-bind = "0.0.0.0:10000"
+bind = "0.0.0.0:5000"
 workers = 1  # Use only 1 worker to conserve memory
 worker_class = "sync"
 timeout = 120  # Increase timeout to 2 minutes
