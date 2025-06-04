@@ -1,0 +1,9 @@
+gunicorn
+flask
+numpy
+flask_cors
+matplotlib
+keras
+pillow
+tensorflow
+pandas
