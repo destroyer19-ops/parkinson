@@ -9,7 +9,7 @@ os.environ["TF_CPP_MIN_LOG_LEVEL"] = "3"
 
 @app.route('/')
 def index():
-    return "Lung Disease Diagnosis API"
+    return "Brain Disease Diagnosis API"
 
 @app.route("/classify", methods=["POST"])
 def classify():
